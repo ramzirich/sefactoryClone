@@ -142,20 +142,27 @@ pickPathSectionBtnElementArr = [...pickPathSectionBtnElement]
 pickPathSectionBtnElementArr.forEach(element =>{
     element.addEventListener("click",function(){
         firsTitleMapElement.innerHTML = "";
-        removeClasses();
         const btnId = element.innerHTML
+        removeClasses();
         let btnObj = map.get(btnId)
         firsTitleMapElement.innerHTML = btnObj.firsttitle;
-        console.log(firsTitleMapElement.innerHTML )
         firsTitleMapElement.classList.add(btnObj.color);
         secondTitleMapElement.innerHTML =" "+ btnObj.secondtitle;
         textMapElement.innerHTML = btnObj.text;
         programesSectionElement.classList.add(btnObj.bgColor);
         confirmElement.classList.add(btnObj.color);
+        element.classList.add('background-black-pick');
+        element.classList.add(btnObj.color)
     })
 })
 
 function removeClasses(){
+    pickPathSectionBtnElementArr.forEach(element =>{
+        element.classList.remove('background-black-pick');
+        for(let d=0; d<colorArr.length; d++){
+            element.classList.remove(colorArr[d])
+        }
+    }) 
     for(let e=0; e<backgroundColorArr.length; e++){
         programesSectionElement.classList.remove(backgroundColorArr[e]);
         firsTitleMapElement.classList.remove(colorArr[e]);
@@ -190,7 +197,6 @@ thirdAnswerElement.addEventListener("click",function(){
 const fetchStudentInfoAsync = async () => {
     while(true){ 
         let therealIndex = index % 3 ;
-        console.log(therealIndex)
         persImgElement.src = personImgArr[therealIndex];
         smallPersonImgElement.src = personImgArr[therealIndex];
         persTextElement.innerHTML = personTextArr[therealIndex];
