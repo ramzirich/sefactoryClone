@@ -8,24 +8,28 @@
 </head>
 <body>
     <div class="container">
-        <div class="first-container">
-            <div class="first-container-left">
-                <img src="./assets/images/se-factory-logo.svg" class="se-factory-logo" alt="se-factory-logo">
-                <div class="first-container-left-content">
-                    <div class="paragraph-in-black">
-                        <p >want  to  become  a</p>
+        <div class="first-container" id="home-section">
+            <div class="first-container-left" id="first-container-left">
+                <div class="overlay" id="overlay"></div>
+                <div class="content">
+                    <img src="./assets/images/se-factory-logo.svg" class="se-factory-logo" alt="se-factory-logo">
+                    <div class="first-container-left-content">
+                        <div class="paragraph-in-black">
+                            <p >want  to  become  a</p>
+                        </div>
+                        <p id="speciality-moving-text"></p> 
+                        <p>Jumpstart your journey in tech with our courses in Computer Science,
+                            Full-Stack Web development, Data Engineering and UI/UX Design. 
+                            Get hands-on experience and gain essential skills for a successful tech career.
+                        </p>
+                        <button class="get-trained-btn">#GET_TRAINED</button>
                     </div>
-                    <p id="speciality-moving-text">SOFTWARE DEVELOPPER</p> 
-                    <p>Jumpstart your journey in tech with our courses in Computer Science,
-                        Full-Stack Web development, Data Engineering and UI/UX Design. 
-                        Get hands-on experience and gain essential skills for a successful tech career.
-                    </p>
-                    <button class="get-trained-btn">#GET_TRAINED</button>
                 </div>
+                
                 
             </div>
             <div class="first-container-right">
-                <img src="./assets/images/burger-icon.png" class="burger-icon" alt="burger-icon">
+                <img src="./assets/images/burger-icon.png" class="burger-icon" alt="burger-icon" id="burger-icon">
                 <div class="first-container-right-content">
                     <div class="paragraph-in-white">
                         <p >want  to  hire</p>
@@ -40,8 +44,50 @@
             </div>
         </div>
 
+        <div class="menu fade-in hidden" id="menu-fade">
+            <div class="menu-container">
+                <div class="menu-left-container">
+                    <img src="./assets/images/se-factory-logo.svg" class="menu-se-logo">
+                    <div class="choose-section">
+                        <div class="hover-menu-items" >
+                            <a href="#home-section" class="phosphore-color choosea" id="home-link">Home</a>
+                        </div>
+                        <div class="hover-menu-items"><a  class="choosea" href="#hello-world-section">Hello World!</a> </div>
+                        <div class="hover-menu-items"><a class="choosea" href="#milestones-section">Milestones</a></div>
+                        <div class="hover-menu-items"><a class="choosea" href="#programes-section">Programes</a></div>
+                        <div class="hover-menu-items"><a class="choosea" href="#hire-talent-section">Hire Talent</a></div>
+                        <div class="hover-menu-items"><a class="choosea" href="#testimonial-section">Testimonals</a></div>
+                        <div class="hover-menu-items"><a class="choosea" href="#faq-section">FAQs</a></div>
+                        <div class="hover-menu-items"><a class="choosea" href="#contact-section">Contact Us</a></div>
+                        <div class="hover-menu-items"><a class="choosea" href="#partner-section">Partner</a></div>
+                        <div class="hover-menu-items"><a class="choosea" href="#newsletter-section">Newsletter</a></div>
+                    </div>                 
+                </div>
+
+                <div class="menu-right-container">
+                    <div class="menu-close">
+                        <img src="./assets/images/close.PNG" class="close-btn" id="close-btn">
+                    </div>
+                    <div class="account-box">
+                        <div class="menu-right-title">
+                            <p class="phosphore-color title-acc">><span>Account</span></p>
+                            <p class="menu-text-clr">/* Login with existing or create a new account in order to 
+                                apply to SEF programs */</p>
+                        </div>
+                        <div class="menu-container-btns">
+                            <button class="first-menu-btn">LOG IN</button>
+                            <button class="second-menu-btn">SIGN UP</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/blue.PNG" alt="blue" class="blue">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- second-section -->
-        <section class="section-start">
+        <section class="section-start" id="hello-world-section">
             <div class="section-container">
                 <div class="section-header">
                     <div class="section-title">
@@ -65,7 +111,7 @@
         </section>
 
         <!-- section-three -->
-        <section class="section-start third-section">
+        <section class="section-start third-section" id="milestones-section">
             <div class="section-container">
                 <div class="section-header">
                     <div class="section-title">
@@ -87,7 +133,8 @@
                         </div>
                         <div class="big-block-text">
                             <div class="big-block-text-line-one">
-                                - Supported the employment of <strong>250</strong>+ youth
+                                <p>- Supported the employment of <strong>250</strong>+ youth</p>
+                                
                             </div>
                             <div >
                                 - <strong>50</strong>% working remotely from Lebanon
@@ -101,22 +148,30 @@
                     <div class="second-third-columns">
                         <div class="second-row-blocks">
                             <div class="second-column-upper-block">
-                                <p>1,000+</p>
-                                <p>youth trained since 2016</p>
+                                <p class="columns-numbers">1,000+</p>
+                                <div class="text-wrap">
+                                    <p>youth trained since 2016</p>
+                                </div>                               
                             </div>
                             <div class="third-column-upper-block">
-                                <p>10+</p>
-                                <p>hiring countries</p>
+                                <p class="columns-numbers">10+</p>
+                                <div class="text-wrap">
+                                    <p>hiring countries</p>
+                                </div>                             
                             </div>
                         </div>
                         <div class="third-row-blocks">
                             <div class="second-column-lower-block">
-                                <p>300+</p>
-                                <p>graduated Full-Stack web developers</p>
+                                <p class="columns-numbers">300+</p>
+                                <div class="text-wrap">
+                                    <p>graduated Full-Stack web developers</p>
+                                </div>                               
                             </div>
                             <div class="third-column-lower-block">
-                                <p>220+</p>
-                                <p>global recruitment partner companies</p>
+                                <p class="columns-numbers">220+</p>
+                                <div class="text-wrap">
+                                    <p>global recruitment partner companies</p>
+                                </div>
                             </div>
                         </div>
                     </div>      
@@ -125,7 +180,7 @@
         </section>
 
         <!-- section-four -->
-        <section class="section-start pick-path-section">
+        <section class="progames-section-start pick-path-section background-phosphore" id="programes-section">
             <div class="section-container">
                 <div class="section-header">
                     <div class="section-title pick-path-title">
@@ -141,15 +196,16 @@
                     <div class="pick-path-section-btns">
                         <a class="pick-path-section-btn" id="fcs-btn">FCS</a>
                         <a class="pick-path-section-btn" id="fsw-btn">FSW</a> 
-                        <a  class="pick-path-section-btn" style="background-color: black; color: #28eea7;" id="fsd-btn">FSD</a>
+                        <a  class="pick-path-section-btn" id="fsd-btn">FSD</a>
                         <a class="pick-path-section-btn" id="uix-btn">UIX</a>
                     </div>
                     <div class="path-detail">
                         <div class="path-detail-text">
                             <div class="path-detail-title">
-                                <span class="phosphore-color"> >  FSW:</span>  full-stackweb development
+                                <div class="color-phosphore" id="first-title-map"><p>>  FSW: </p></div> 
+                                <div class="" id="second-title-map"><p>Full-Stack Web Development</p></div>
                             </div>
-                            <div class="path-detail-description">
+                            <div class="path-detail-description" id="text-map">
                                 // Our 14-week bootcamp is designed to equip aspiring developers 
                                 with the technical and interpersonal skills needed to become professional 
                                 software engineers. Participants will learn essential concepts such as Version Control,
@@ -164,7 +220,7 @@
                                 <div class="path-detail-btn">
                                     next bootcamp date 
                                     <span class="add-margin-left">|</span>
-                                    <span class="phosphore-color add-margin-left">To be confirmed</span>
+                                    <span class="color-phosphore add-margin-left" id="confirm">To be confirmed</span>
                                 </div>
                                 <div class="path-detail-btn">
                                     LEARN MORE  <span class="add-margin-left"></span> >
@@ -181,7 +237,7 @@
         </section>
 
         <!--hire talent-->
-        <section class="section-start hire-talent-section">
+        <section class="section-start hire-talent-section" id="hire-talent-section">
             <div class="section-container">
                 <div class="section-header hire-talent-container">
                     <div class="section-title pick-path-title">
@@ -219,7 +275,7 @@
         </section>
 
         <!--graduate-section-->
-        <section class="section-start">
+        <section class="section-start" id="testimonial-section">
             <div class="section-container">
                 <div class="section-header">
                     <div class="section-title">
@@ -236,7 +292,7 @@
                         <div class="card-detail-logo">
                             <img src="./assets/images/''.svg" alt="''" class="card-detail-logo">
                         </div>
-                        <div class="card-detail-text">
+                        <div class="card-detail-text" id="pers-text">
                             <p>Looking back, I cannot believe that only a year ago, I knew almost nothing
                                 about programming, and now I am a professional software engineer working remotely
                                 for a startup located in Norway. The boot camp was a 
@@ -247,14 +303,17 @@
                                 <img src="./assets/images/zakaria-round.png" alt="zakaria-round" id="small-person-img">
                             </div>
                             <div class="person-name-job">
-                                <span class="phosphore-color">Zakaria </span>T.
-                                <p>>  SEF alumnus working at <span class="phosphore-color">Celsia</span></p>
+                                <span class="phosphore-color" id="first-name">Zakaria </span>
+                                <span id="family-name">T.</span>
+                                <p id="work">>  SEF alumnus working at 
+                                    <span class="phosphore-color" id="work-place">Celsia</span>
+                                </p>
                             </div>
                             
                         </div>
                     </div>
                     <div class="card-img">
-                        <img src="./assets/images/zakaria.png" alt="zakaria" alt="card-img">
+                        <img src="./assets/images/zakaria.png" alt="zakaria" alt="card-img" id="pers-img">
                     </div>
                 </div>
             </div>
@@ -263,9 +322,9 @@
         <!--faq-section-->
         <section class="section-start faq">
             <div class="section-container">
-                <div class="section-header">
-                    <div class="section-title">
-                        <h2>> <span>FAQs</span></h2>
+                <div class="section-header faq-header">
+                    <div class="section-faq-title">
+                        <h2 class="phosphore-color">> <span class="section-faq-title">FAQs</span> </h2>
                     </div>
                     <div class="circles">
                         <div class="circle black-circle"></div>
@@ -275,8 +334,8 @@
                 </div>
                 <div class="qa-section">
                     <div class="question-answer-block">
-                        <div class="question">
-                            <div class="question-text" id="first-question-answer">
+                        <div class="question" id="first-question-answer">
+                            <div class="question-text" >
                                 <span class="phosphore-color">></span> 
                                 What is the Difference Between the FSW Bootcamp & the FCS Program? 
                             </div>
@@ -284,7 +343,7 @@
 
                             </div>
                         </div>
-                        <div class="answer" id="first-answer">
+                        <div class="answer hidden" id="first-answer">
                             FCS covers the foundational concepts of programming. It’s a starting point for 
                             those new to programming or a refresher for those who studied computer science before. 
                             Knowledge of the concepts provided in FCS is required for FSW. It can also be taken 
@@ -301,8 +360,8 @@
                         </div>
                     </div>
                     <div class="question-answer-block">
-                        <div class="question">
-                            <div class="question-text" id="second-question-answer">
+                        <div class="question" id="second-question-answer">
+                            <div class="question-text" >
                                 <span class="phosphore-color">></span> 
                                 Where do I apply?
                             </div>
@@ -310,13 +369,13 @@
 
                             </div>
                         </div>
-                        <div class="answer" id="second-answer">
+                        <div class="answer hidden" id="second-answer">
                             Go to the Get Trained section of this website and select the appropriate program for you.
                         </div>
                     </div>
-                    <div class="question-answer-block">
-                        <div class="question">
-                            <div class="question-text" id="third-question-answer">
+                    <div class="question-answer-block" >
+                        <div class="question" id="third-question-answer" >
+                            <div class="question-text" >
                                 <span class="phosphore-color">></span> 
                                 What programs do you offer?
                             </div>
@@ -324,7 +383,7 @@
 
                             </div>
                         </div>
-                        <div class="answer" id="third-answer" style="margin-bottom: 10px;">
+                        <div class="answer hidden" id="third-answer" style="margin-bottom: 10px;">
                            <strong>We currently offer four programs:</strong>
                            <ul style="margin-bottom: 10px; margin-left: 20px;">
                             <li><strong><span class="phosphore-color">FCS</span></strong>: Foundations of Computer Science</li>
@@ -444,6 +503,55 @@
                 </div>       
             </div>
         </section>
+        <!-- partner-section -->
+        <section class="section-start">
+            <div class="section-container">
+                <div class="section-header partner-header">
+                    <div class="section-title">
+                        <h2>> <span>Partners</span></h2>
+                    </div>
+                    <div class="circles">
+                        <div class="circle black-circle"></div>
+                        <div class="circle grey-circle"></div>
+                        <div class="circle phosphore-circle"></div>
+                    </div>
+                </div>
+                <div class="partners-logo">
+                    <img src="./assets/images/fanar.png" alt="fanar-logo">
+                    <img src="./assets/images/life.png" alt="life-logo">
+                    <img src="./assets/images/isdb.png" alt="isdb-logo">
+                    <img src="./assets/images/spark.png" alt="spark-logo">
+                    <img src="./assets/images/gil.png" alt="gil-logo">
+                    <img src="./assets/images/gotn.png" alt="gotn-logo">
+                    <img src="./assets/images/ghorayr.png" alt="ghorayr-logo">
+                    <img src="./assets/images/unicef.png" alt="unicef-logo">
+                    <img src="./assets/images/drosos.png" alt="drosos-logo">
+                    <img src="./assets/images/giz.png" alt="giz-logo">
+                    <img src="./assets/images/german.png" alt="german-logo">
+                    <img src="./assets/images/michel.png" alt="michel-logo">
+                </div>
+            </div>
+        </section> 
+        
+        <!--news-letter-->
+        <footer>
+            <div class="news-letter-container">
+                <div class="news-letter-words">
+                    <span>Subscribe to our </span><span class="newsletter-word phosphore-color">newsletter</span>
+                    <br>
+                    <span class="stay-today">and stay up-to-date with our latest news.</span>
+                </div>
+                <div class="footer-input-btn">
+                    <div class="footer-input">
+                        <input type="text" placeholder="Enter your email"/>
+                    </div>
+                    <div class="footer-btn">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </footer>  
     </div>
+    <script src="./assets/index.js"></script> 
 </body>
 </html>
